@@ -1,0 +1,26 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "72622249f28fad1dfb39724ff878e184"
+name = "social-media-counter" 
+application_url = "https://social-media-counter-dev.onrender.com"
+embedded = true
+handle = "social-media-counter-3"
+
+[webhooks]
+api_version = "2025-07"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+
+
+[auth]
+redirect_urls = [
+  "https://social-media-counter-dev.onrender.com/auth/callback",
+  "https://social-media-counter-dev.onrender.com/auth/shopify/callback",
+  "https://social-media-counter-dev.onrender.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
